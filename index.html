@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Environment Monitoring</title>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <h1>Car Environment Monitoring</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <div class="tab active" onclick="showTab('temperature')">🌡️ Temp</div>
+        <div class="tab" onclick="showTab('humidity')">💧 Humidity</div>
+        <div class="tab" onclick="showTab('air_quality')">🌬️ Air</div>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="temperature" class="content active">
+        <h2>🌡️ Temperature</h2>
+        <p id="value1" class="value">Loading...</p>
+        <p class="description">Maintain a comfortable car temperature to prevent overheating.</p>
+    </div>
+
+    <div id="humidity" class="content">
+        <h2>💧 Humidity</h2>
+        <p id="value2" class="value">Loading...</p>
+        <p class="description">Optimal humidity prevents fogging on windows.</p>
+    </div>
+
+    <div id="air_quality" class="content">
+        <h2>🌬️ Air Quality</h2>
+        <p id="value3" class="value">Loading...</p>
+        <p id="air_quality_desc" class="description">Assessing environment...</p>
+    </div>
+
+    <script src="sty.js"></script>
+
+</body>
+</html>
